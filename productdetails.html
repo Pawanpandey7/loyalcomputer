@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products- loyal computer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo-banner.png" alt="logo" width="125px">
+                
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">All Products</a></li>
+                    <li><a href="">Desktops</a></li>
+                    <li><a href="">Laptops</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="./download.png" width="30px" height="30px">
+            <img src="./menuicon.png" class="menu-icon" onclick="menutoggle()"> 
+        </div>       
+    </div>
+</div>
+
+<!--------------single product detail---------->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="./best-laptop-brands-20230420-3-medium.jpg" width="100%">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="./dell latitute.jpg" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="./dell inspiron 3511.jpg" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="./lenovo legion.jpg" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="./asus tuff gaming f15.jpg" width="100%">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-2">
+            <p>Home / laptop</p>
+            <h1>Acer Predator Helios Neo 16 2023 i7 13th Gen | 1 Year Warranty | RTX 4060 | 16GB RAM | 1TB SSD | 16″ WQXGA 165Hz display</h1>
+            <h4>94000</h4>
+           
+            <input type="number" value="1">
+            <a href="" class="btn">Add to Cart</a>
+            <h3>Product Details <i class="fa fa-idenl"></i></h3>
+            <hr>
+            <p>Model: Acer Predator Helios 16 (PH16-71) 2023 <br>
+                Processor: 13th Generation Intel Core i7-13700H<br>
+                RAM: 16GB DDR5-4800Mhz<br>
+                Storage: 1TB SSD<br>
+                Display: 16″ display with IPS, WUXGA 1920 x 1200  pixels, high-brightness (300 nits)<br>
+                Graphic: NVIDIA GeForce RTX 4060 Graphics with 8GB of dedicated GDDR6 VRAM<br>
+                Warranty: 1 Year Warranty</p>
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    
+    <div class="row">
+        <div class="col-4">
+            <img src="./asus 2.png" width="100%">
+            <h4>asus</h4>                     
+            <p>rs 70000</p>
+        </div>   
+        <div class="col-4">
+            <img src="./accer swift go 14.jpg" alt="">
+            <h4>asus</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            </div>                      
+            <p>rs 94000</p>
+        </div> 
+        <div class="col-4">
+            <img src="./dell latitute.jpg" alt="">
+            <h4>Dell latitude</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            </div>                      
+            <p>rs 80000</p>
+        </div> 
+        <div class="col-4">
+            <img src="./lenovo legion.jpg" alt="">
+            <h4>Lenovo Legion</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            </div>                      
+            <p>rs 55000</p>
+        </div>         
+    </div> 
+   </div>
+<!---------footer--------> 
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                 <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return policy</li>
+                    <li>Join affiliate</li>
+                 </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                 <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                 </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2024</p>
+    </div>
+</div>      
+<!-------js for toggle menu-------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+           {
+            MenuItems.style.maxHeight = "200px";
+           }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }   
+
+    }
+    
+</script>
+
+        
+    
+</body>
+</html>

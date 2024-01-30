@@ -23,87 +23,54 @@
                     <li><a href="" target="_blank">Laptops</a></li>
                     <li><a href="" target="_blank">About Us</a></li>
                     <li><a href="account.html" target="_blank">Contact</a></li>
+
                 </ul>
             </nav>
             <img src="./download.png" width="30px" height="30px">
             <img src="./menuicon.png" class="menu-icon" onclick="menutoggle()"> 
-        </div>
-       
+        </div>       
     </div>
 </div>
-<div class="small-container">
-    <div class="row row-2">
-        <h2>All Products</h2>
-        <select>
-            <option>Default Shorting</option>
-            <option>Sort by price</option>
-            <option>Sort by popularity</option>
-            <option>Sort by rating</option>
-            <option>Sort by sale</option>
-        </select>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <img src="./asus 2.png" alt="">
-            <h4>asus</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-            </div>                      
-            <p>rs 70000</p>
-        </div>   
-        <div class="col-4">
-            <img src="./accer swift go 14.jpg" alt="">
-            <h4>asus</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-            </div>                      
-            <p>rs 94000</p>
-        </div> 
-        <div class="col-4">
-            <img src="./dell latitute.jpg" alt="">
-            <h4>Dell latitude</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-            </div>                      
-            <p>rs 80000</p>
-        </div> 
-        <div class="col-4">
-            <img src="./lenovo legion.jpg" alt="">
-            <h4>Lenovo Legion</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-            </div>                      
-            <p>rs 55000</p>
-        </div>         
-    </div>
-    <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>&#8594;</span>
-    
-       </div>
-    
-   </div>
 
-   
+<!---account page---->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="./ecommerce-shopping-cart.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forget Password</a>
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 <!---------footer--------> 
 <div class="footer">
@@ -150,7 +117,30 @@
     
 </script>
 
-        
-    
+<!--------JS for toggle form-------->
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0x)"; 
+        Indicator.style.transform = "translateX(100px)";  
+    }
+
+    function login()
+    {
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "transLateX(300px)";
+        Indicator.style.transform = "transLateX(0px)";
+    }
+
+
+</script>
+
+
+
 </body>
 </html>
